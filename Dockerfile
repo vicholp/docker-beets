@@ -36,6 +36,7 @@ RUN \
     gobject-introspection \
     gst-plugins-good \
     gstreamer \
+    imagemagick \
     jpeg \
     lame \
     libffi \
@@ -78,9 +79,12 @@ RUN \
     beautifulsoup4 \
     beets==${BEETS_VERSION} \
     beets-extrafiles \
+    beets-alternatives \
+    beets-artistcountry \
     beetcamp \
     discogs-client \
-    flask \
+    flask==2.1.3 \
+    flask-cors \
     PyGObject \
     Pillow==9.5.0 \
     pyacoustid \
