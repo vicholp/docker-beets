@@ -87,6 +87,7 @@ RUN \
     flask-cors \
     PyGObject \
     Pillow==9.5.0 \
+    Werkzeug==2.3.7 \
     pyacoustid \
     pylast \
     requests \
