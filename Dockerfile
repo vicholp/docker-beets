@@ -93,6 +93,7 @@ RUN \
     requests \
     requests_oauthlib \
     unidecode && \
+  pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@master && \
   echo "**** cleanup ****" && \
   apk del --purge \
     build-dependencies && \
