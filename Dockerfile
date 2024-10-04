@@ -87,10 +87,8 @@ RUN \
   beetcamp \
   python3-discogs-client \
   flask==2.1.3 \
-  flask==2.1.3 \
-  flask-cors-cors \
+  flask-cors \
   PyGObject \
-  Werkzeug==2.3.7 \
   Werkzeug==2.3.7 \
   pyacoustid \
   pylast \
@@ -98,9 +96,8 @@ RUN \
   requests_oauthlib \
   typing-extensions \
   unidecode && \
-  pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@master && \
+  pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@main && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
-  pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@master && \
   echo "**** cleanup ****" && \
   apk del --purge \
   build-dependencies && \
