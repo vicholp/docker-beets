@@ -37,6 +37,7 @@ RUN \
   gst-plugins-good \
   gstreamer \
   imagemagick \
+  imagemagick \
   jpeg \
   lame \
   libffi \
@@ -81,11 +82,15 @@ RUN \
   beets-extrafiles \
   beets-alternatives \
   beets-artistcountry \
+  beets-alternatives \
+  beets-artistcountry \
   beetcamp \
   python3-discogs-client \
   flask==2.1.3 \
-  flask-cors \
+  flask==2.1.3 \
+  flask-cors-cors \
   PyGObject \
+  Werkzeug==2.3.7 \
   Werkzeug==2.3.7 \
   pyacoustid \
   pylast \
@@ -93,6 +98,7 @@ RUN \
   requests_oauthlib \
   typing-extensions \
   unidecode && \
+  pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@master && \
   printf "Linuxserver.io version: ${VERSION}\nBuild-date: ${BUILD_DATE}" > /build_version && \
   pip install -U --no-cache-dir git+https://github.com/geigerzaehler/beets-check.git@master && \
   echo "**** cleanup ****" && \
